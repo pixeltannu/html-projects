@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+        }
+    .yellow{
+            color: yellow;
+        }
+    .cred{
+        color: red;
+    }
+    .cpurple{
+        color: purple;
+    }
+    /* this is an ex of attribute selector. The specificity of this selector is 10 */
+    /* the specificity of this selector is 10 */
+    a.tannuclass.anisha-class[href]:hover {
+        color: blueviolet;
+    }
+    [data-x=a]{
+            background-color: red;
+        } 
+    </style>
+</head> 
+<body>
+    <div>
+        <p class="yellow cred cpurple" data-x="a">
+         Hello World
+        </p>
+    </div>
+</body>
+</html>

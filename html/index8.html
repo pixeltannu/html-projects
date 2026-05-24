@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+        <style>
+           /*box:first-child{
+                background-color: red;
+            } */
+          /*.box::first-line{
+                color: red;                                                  
+            } */
+            /* .boxes *{
+                color: blue;
+                border: 2px solid black
+             }
+             p, a, .box[data-color="primary"]{
+                margin: top 45px;
+                padding: top 45px;
+             } */
+             /* .box:nth-child(odd){
+                background-color: blue;
+              } */
+              /* .box:nth-last-child(2){
+                background-color: red;
+               } */
+                .boxes::before{
+                    content: "Tannu is good.";
+                    background-color: blue;
+                }
+                .boxes::after{
+                    content: "She is curious to learn web devlopment.";
+                    background-color: red;
+                }
+                ::selection{
+                    background-color: blueviolet;
+                    color: red;
+                }
+                .box::first-letter{
+                    color: green;
+                    font-size: 45px;
+                }
+                
+             /* pseudo Selector */
+             a:visited{
+                color: yellow;
+             }
+             a:link{
+                color: green;
+             }
+        </style>
+    </title>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus facilis dolor quisquam, tenetur, corporis dicta ipsa veniam beatae libero expedita illo amet odio pariatur aut vitae doloremque odit totam debitis perspiciatis hic et ad. Sed aliquid in, perspiciatis qui assumenda esse labore quaerat ut.</div>
+        <div data-color="primary" class="box">I am first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your name here"
+    </div>
+</body>
+</html>
