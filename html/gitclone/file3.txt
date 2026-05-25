@@ -1,1 +1,4 @@
 I am a fix title which will be used to fix the bug.This is file3
+I am a student.
+
+onr more bug detected and fixed
